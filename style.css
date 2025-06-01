@@ -49,3 +49,29 @@
 .btn-open:hover {
   background-color: #b17d4b;
 }
+/* Biar body dan html gak ada margin & padding default */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive font size untuk nama pasangan */
+@media (max-width: 600px) {
+  .couple-name {
+    font-size: 2rem;
+  }
+  .wedding-date {
+    font-size: 1rem;
+  }
+  .btn-open {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Kalau mau tombol kayak button (bukan link) bisa tambah cursor pointer */
+.btn-open {
+  cursor: pointer;
+}
