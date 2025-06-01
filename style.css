@@ -136,3 +136,22 @@ section {
   font-size: 0.9rem;
   text-align: center;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .couple-name {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .btn-open,
+  .btn-rsvp {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
