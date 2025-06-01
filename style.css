@@ -1,67 +1,138 @@
-/* Reset */
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+:root {
+  --main-color: #cc9966;
+  --accent-color: #fffaf2;
+  --text-color: #333;
+  --bg-color: #fdfcfb;
+}
+
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Cover Section */
+.cover {
+  background: url('assets/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.cover-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  color: #facc15;
   text-align: center;
+  padding: 2rem;
 }
 
-.container {
-  background: #0f172a;
-  border: 4px solid #fbbf24;
-  border-radius: 24px;
-  max-width: 400px;
-  padding: 40px 30px;
-  box-shadow: 0 8px 30px rgba(251, 191, 36, 0.5);
-}
-
-h1 {
+.couple-name {
   font-family: 'Great Vibes', cursive;
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-  letter-spacing: 0.2em;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-h2 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.5rem;
-  margin-bottom: 25px;
+.wedding-date {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-p.info {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #f3f4f6;
-}
-
-a.btn-rsvp {
-  display: inline-block;
-  background: #fbbf24;
-  color: #0f172a;
-  font-weight: 600;
-  padding: 15px 35px;
-  border-radius: 9999px;
+.btn-open {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  box-shadow: 0 6px 15px rgba(251, 191, 36, 0.5);
+  font-weight: bold;
+  border-radius: 25px;
   transition: background-color 0.3s ease;
 }
 
-a.btn-rsvp:hover {
-  background: #f59e0b;
+.btn-open:hover {
+  background-color: #b17d4b;
 }
 
-footer {
-  margin-top: 40px;
-  font-size: 0.85rem;
-  color: #94a3b8;
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Great Vibes', cursive;
+  color: var(--main-color);
+}
+
+.invitation-text {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Couple Info */
+.couple-info {
+  margin: 2rem auto;
+  max-width: 600px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.couple-info .and {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 1rem 0;
+  display: block;
+}
+
+.bride,
+.groom {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Event Details */
+.event-details {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* RSVP Section */
+.btn-rsvp {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rsvp:hover {
+  background-color: #b17d4b;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
