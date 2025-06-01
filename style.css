@@ -1,3 +1,14 @@
+/* Tambahan untuk menyembunyikan awalnya */
+.hidden {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .cover {
   background: url('assets/bg.jpg') no-repeat center center/cover;
   height: 100vh;
@@ -49,29 +60,39 @@
 .btn-open:hover {
   background-color: #b17d4b;
 }
-/* Biar body dan html gak ada margin & padding default */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
+
+.section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
 }
 
-/* Responsive font size untuk nama pasangan */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.invitation-text {
+  font-size: 1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 @media (max-width: 600px) {
   .couple-name {
     font-size: 2rem;
   }
+
   .wedding-date {
     font-size: 1rem;
   }
+
   .btn-open {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
-}
-
-/* Kalau mau tombol kayak button (bukan link) bisa tambah cursor pointer */
-.btn-open {
-  cursor: pointer;
 }
