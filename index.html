@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Undangan Pernikahan - [Nama Mempelai]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js" defer></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet" />
@@ -63,4 +66,26 @@
   </footer>
 
 </body>
+  <script>
+  // Smooth scroll ke elemen
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+
+  // Animasi saat scroll pakai ScrollReveal
+  ScrollReveal().reveal(".section", {
+    delay: 100,
+    duration: 800,
+    distance: "50px",
+    easing: "ease-in-out",
+    origin: "bottom",
+    reset: false,
+  });
+</script>
+
 </html>
