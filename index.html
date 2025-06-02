@@ -25,10 +25,9 @@
     <p class="invitation-text">
       Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
     </p>
-    <!-- Tambahkan bagian isi undangan lainnya di sini -->
   </section>
 
-  <!-- Script Interaktif -->
+  <!-- Script -->
   <script>
     document.querySelector(".btn-open").addEventListener("click", function (e) {
       e.preventDefault();
@@ -36,17 +35,6 @@
       document.querySelector("#main").classList.remove("hidden");
     });
   </script>
-  <script>
-document.querySelector(".btn-open").addEventListener("click", function (e) {
-  e.preventDefault();
-  document.querySelector(".cover").style.display = "none";
-  const main = document.querySelector("#main");
-  main.classList.remove("hidden");
-  main.style.opacity = 0;
-  setTimeout(() => {
-    main.style.opacity = 1;
-  }, 100);
-});
-</script>
+
 </body>
 </html>
