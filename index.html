@@ -36,6 +36,17 @@
       document.querySelector("#main").classList.remove("hidden");
     });
   </script>
-
+  <script>
+document.querySelector(".btn-open").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".cover").style.display = "none";
+  const main = document.querySelector("#main");
+  main.classList.remove("hidden");
+  main.style.opacity = 0;
+  setTimeout(() => {
+    main.style.opacity = 1;
+  }, 100);
+});
+</script>
 </body>
 </html>
